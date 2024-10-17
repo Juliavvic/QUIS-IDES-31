@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Quiz dos Biomas Brasileiros</title>
+</head>
+<body>
+    <div id="intro" class="intro">
+        <h1>Quiz dos Biomas Brasileiros</h1>
+        <p>Teste seus conhecimentos sobre a diversidade, saberes e tecnologias sociais dos biomas brasileiros!</p>
+        <button id="start-btn" class="start-btn">Iniciar Quiz</button>
+    </div>
+    <div id="quiz" style="display:none;">
+        <div id="question"></div>
+        <div id="choices"></div>
+        <button id="next-btn" style="display:none;" onclick="nextQuestion()">Próxima Questão</button>
+        <button id="hint-btn" style="display:inline-block;" onclick="askForHint()">Pedir Dica</button>
+    </div>
+    <div id="result" style="display:none;"></div>
+    <div id="review" style="display:none;"></div>
+    <button id="restart-btn" style="display:none;" onclick="startQuiz()">Reiniciar Quiz</button>
+    <script src="js/script.js"></script>
+</body>
+</html>
